@@ -1,0 +1,56 @@
+.profile__week {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    color: var(--Pale--Blue);
+}
+
+.profile__week p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.profile__week p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.profile__week p:nth-child(1) {
+    margin-top: 15px;
+}
+
+@media (width < 776px){
+
+    .profile__week{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .profile__image--modifier{
+        margin-bottom: 0px;
+    }
+
+    .profile__week p:nth-child(1) {
+        margin-top: 0;
+    }
+
+    .profile__information p:nth-last-child(1) {
+        font-size: 30px;
+    }
+
+    .container__profile {
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+    }
+
+    .container__person {
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+    }
+
+}

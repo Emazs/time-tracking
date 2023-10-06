@@ -1,0 +1,9 @@
+.container__person{
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 255px;
+    min-height: 520px;
+    border-radius: 15px;
+    background-color: var(--Dark-blue);
+}
+

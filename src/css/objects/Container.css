@@ -1,0 +1,40 @@
+@import '../settings/variables.css';
+@import '../generic/normalize.css';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98dvh;
+    color: white;
+    font-family: var(--Rubik);
+    background-color: var(--Verydark-blue);
+}
+
+.container {
+    background-color: var(--Verydark-blue);
+    font-family: var(--Rubik);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (width < 776px) {
+    #root{
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    body {
+        height: auto;
+    }
+}

@@ -1,0 +1,163 @@
+.container__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    color: white;
+}
+
+.card {
+    border-radius: 20px 20px 26px 26px;
+    min-width: 255px;
+}
+
+.card__work--orange{
+    background-color: var(--Light-orange);
+}
+
+.card__image--orange {
+    background-image: url('/src/assets/images/icon-work.svg');
+    background-color: var(--Light-orange);
+    background-repeat: no-repeat;
+    background-position: 10rem -6px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 47px;
+}
+
+.card__work--blue{
+    background-color: var(--Soft-blue);
+}
+
+.card__image--blue {
+    background-image: url('/src/assets/images/icon-play.svg');
+    background-color: var(--Soft-blue);
+    background-repeat: no-repeat;
+    background-position: 10rem -6px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 47px;
+}
+
+.card__work--pink{
+    background-color: var(--Light-pink);
+}
+
+.card__image--pink {
+    background-image: url('/src/assets/images/icon-study.svg');
+    background-color: var(--Light-pink);
+    background-repeat: no-repeat;
+    background-position: 10rem -6px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 47px;
+}
+
+.card__work--green{
+    background-color: var(--Lime-green);
+}
+
+.card__image--green {
+    background-image: url('/src/assets/images/icon-exercise.svg');
+    background-color: var(--Lime-green);
+    background-repeat: no-repeat;
+    background-position: 10rem -6px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 47px;
+}
+
+.card__work--violet{
+    background-color: var(--Violet);
+}
+
+.card__image--violet {
+    background-image: url('/src/assets/images/icon-social.svg');
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-position: 10rem -6px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 47px;
+}
+
+.card__work--softOrange{
+    background-color: var(--Soft-orange);
+}
+
+.card__image--softOrange {
+    background-image: url('/src/assets/images/icon-self-care.svg');
+    background-color: var(--Soft-orange);
+    background-repeat: no-repeat;
+    background-position: 10rem -6px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 47px;
+}
+
+.icon-menu:hover{
+    cursor: pointer;
+}
+
+.card__informatio--modifier {
+    padding: 15px 30px;
+    border-radius: 20px;
+    background-color: var(--Dark-blue);
+}
+
+/*content cards*/
+
+.card__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.card__hours p:nth-child(1){
+    font-size: 53px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.card__hours p:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 20px;    
+}
+
+@media (width < 1000px){
+
+    .container__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (width < 1000px){
+
+    .container__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (width < 776px){
+    .card{
+        width: 100%;
+    }
+
+    .card__hours{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card__image {
+        background-position: 16rem -6px;
+    }
+
+    .container__cards {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
